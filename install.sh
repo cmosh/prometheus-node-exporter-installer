@@ -1,9 +1,9 @@
 
 # If you want a specific version of the node_exporter, set it here, you can see the list at https://github.com/prometheus/node_exporter/releases
-PACKAGE_NAME="node_exporter-0.16.0.linux-amd64"
+PACKAGE_NAME="node_exporter-1.0.1.linux-amd64"
 
 # Fetching the archive
-curl -L https://github.com/prometheus/node_exporter/releases/download/v0.16.0/$PACKAGE_NAME.tar.gz -o $PACKAGE_NAME.tar.gz
+curl -k -L https://github.com/prometheus/node_exporter/releases/download/v1.0.1/$PACKAGE_NAME.tar.gz -o $PACKAGE_NAME.tar.gz
 
 # Extracting the archive
 tar xzvf $PACKAGE_NAME.tar.gz
